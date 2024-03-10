@@ -47,7 +47,11 @@ body {
 .button:hover {
   background-color: var(--color-dark);
 }
-
+.sidebar h2 {
+  display: flex;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
 .sidebar ul {
   list-style: none;
   display: flex;

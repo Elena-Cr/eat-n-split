@@ -20,6 +20,7 @@ const initialFriends = [
     balance: 0,
   },
 ];
+
 export default function App() {
   const [friends, setFriends] = useState(initialFriends);
   const [showAddFriend, setShowAddFriend] = useState(false);
@@ -68,7 +69,8 @@ export default function App() {
         <FormSplitBill
           selectedFriend={selectedFriend}
           onSplitFriend={handleSplitFriend}
-        ></FormSplitBill>
+          key={selectedFriend.id}
+        />
       )}
     </div>
   );
